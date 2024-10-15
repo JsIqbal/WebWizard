@@ -65,6 +65,10 @@ Include your licensing information here.
 
 If you'd like to contribute, please open an issue or submit a pull request.
 
+---
+
+### Special instruction
+
 ```
 path to remove the .desktop : /home/kraken/.local/share/applications
 ```
