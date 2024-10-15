@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Linux App Converter</title>
+        <style>
+            body {
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+                text-align: center;
+                margin: 0;
+                height: 200px;
+                width: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 20px; /* Added padding */
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+                border-radius: 8px; /* Rounded corners */
+            }
+
+            h1 {
+                font-size: 26px; /* Increased font size */
+                margin-bottom: 20px; /* Adjusted margin */
+                color: #333;
+                text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+            }
+
+            button {
+                font-size: 20px; /* Increased font size */
+                padding: 15px 30px;
+                background-color: #4caf50;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s, transform 0.2s,
+                    box-shadow 0.2s;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                outline: none; /* Removes focus outline */
+            }
+
+            button:hover {
+                background-color: #45a049;
+                transform: translateY(-3px); /* Slightly stronger lift effect */
+                box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            }
+
+            button:disabled {
+                background-color: #ccc;
+                cursor: not-allowed;
+                box-shadow: none;
+            }
+
+            @media (max-width: 600px) {
+                h1 {
+                    font-size: 22px; /* Adjusted font size for smaller screens */
+                }
+
+                button {
+                    font-size: 18px; /* Adjusted button font size for smaller screens */
+                    padding: 12px 25px; /* Adjusted padding */
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Convert This Page to a Linux App</h1>
+        <button id="convertButton" disabled>🚀 Convert</button>
+        <script src="popup.js"></script>
+    </body>
+</html>
